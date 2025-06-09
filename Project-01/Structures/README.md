@@ -71,3 +71,8 @@ Edit
 
 3. Build and Run:
     Use the Run ▶️ button in Android Studio or press Shift + F10.
+
+
+
+I don't have much idea about this 
+I have to learn from the begin !s
