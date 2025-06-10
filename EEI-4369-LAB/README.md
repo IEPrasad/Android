@@ -89,3 +89,9 @@ This is my submission for the **EEI4369 Mobile Application Development for Andro
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/EEI4369-AndroidLab.git
+
+
+2.	Open in Android Studio.
+3.	Add your own Google Maps API key to AndroidManifest.xml.
+4.	Run the app using AVD or your physical device.
+
