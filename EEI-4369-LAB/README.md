@@ -53,3 +53,14 @@ This is my submission for the **EEI4369 Mobile Application Development for Andro
 ---
 
 ## 📂 Project Structure
+
+📁 app/
+┣ 📁 src/
+┃ ┣ 📁 main/
+┃ ┃ ┣ 📁 java/com//
+┃ ┃ ┣ 📁 res/
+┃ ┃ ┃ ┣ 📁 layout/
+┃ ┃ ┃ ┣ 📁 drawable/ (images, logo.png)
+┃ ┃ ┃ ┣ 📁 raw/ (audio files)
+┃ ┃ ┃ ┗ 📁 values/
+┃ ┃ ┣ AndroidManifest.xml
