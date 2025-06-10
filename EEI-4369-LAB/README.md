@@ -64,3 +64,28 @@ This is my submission for the **EEI4369 Mobile Application Development for Andro
 ┃ ┃ ┃ ┣ 📁 raw/ (audio files)
 ┃ ┃ ┃ ┗ 📁 values/
 ┃ ┃ ┣ AndroidManifest.xml
+
+
+---
+
+## 🔑 External Resources
+
+- **Google Maps API Key**: Configured and added to `AndroidManifest.xml`
+- **Multimedia Assets**: Stored in `res/drawable` and `res/raw`
+- **Sensor Configuration**: Tested using Android Emulator Virtual Sensors
+- **SQLite Database**: Integrated using Android's built-in database API
+
+---
+
+## 🎥 Demo Video & Report
+
+- 🔗 [Video Demonstration (Google Drive)](https://drive.google.com/your-demo-video-link)
+- 📄 [Lab Report PDF (LMS Submission)](https://link-to-your-submitted-pdf)
+
+---
+
+## 📌 Instructions to Run the App
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/EEI4369-AndroidLab.git
