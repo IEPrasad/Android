@@ -22,7 +22,7 @@ buildscript {
 
 ---
 ## 2️⃣ Add Firebase Dependencies
-### Edit App-level build.gradle (app/build.gradle)
+### Edit `App-level build.gradle` (`app/build.gradle`)
 
 ```groovy
 plugins {
@@ -58,8 +58,8 @@ Always check for the latest Firebase BoM version:
 https://firebase.google.com/docs/android/setup#available-libraries
 ---
 
-## 3️⃣ Add google-services.json
-Go to Firebase Console → Project Settings → Your App → Download google-services.json.
+## 3️⃣ Add `google-services.json`
+Go to Firebase Console → Project Settings → Your App → Download `google-services.json`.
 
 Place the file into:
 
@@ -70,7 +70,7 @@ app/google-services.json
 
 ## 4️⃣ Initialize Firebase in Code (Optional)
 
-### In MainActivity.java or MainActivity.kt
+### In `MainActivity.java` or `MainActivity.kt`
 #### For Java:
 
 ```groovy
@@ -104,10 +104,10 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 ---
-Note: In most cases, Firebase initializes automatically using google-services.json.
+Note: In most cases, Firebase initializes automatically using `google-services.json`.
 ---
 
-## 5️⃣ Edit AndroidManifest.xml
+## 5️⃣ Edit `AndroidManifest.xml`
 ### Ensure Internet permission is added:
 
 ```groovy
@@ -115,8 +115,8 @@ Note: In most cases, Firebase initializes automatically using google-services.js
 ```
 ---
 
-## 6️⃣ (Optional) Proguard Rules
-### If using Proguard or R8, add Firebase-specific rules in 'proguard-rules.pro'.
+## 6️⃣ (Optional) `Proguard Rules`
+### If using Proguard or R8, add Firebase-specific rules in `proguard-rules.pro`.
 
 ```groovy
 # Firebase
