@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">CivicEngApp</string>
+
+    <!-- General -->
+    <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Civic Engagement App</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Welcome</string>
+    <string name="welcome_go_to_login">Go to Login</string>
+    <string name="welcome_go_to_register">Go to Register</string>
+
+    <!-- Register -->
+    <string name="register_title">Register</string>
+    <string name="register_hint_nic">Enter NIC</string>
+    <string name="register_hint_password">Create a Password</string>
+    <string name="register_button_text">Register &amp; Go to Login</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="email_hint">E-Mail</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_hint_nic_email">Enter NIC or Email</string>
+    <string name="login_hint_password">Enter Password</string>
+    <string name="login_button_text">Login &amp; Go to Dashboard</string>
+    <string name="forgot_password">Forgot your password?</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_go_to_vote_policy">Vote on Policy</string>
+    <string name="dashboard_go_to_map_view">View District Votes Map</string>
+    <string name="dashboard_go_to_report_issue">Report a Local Issue</string>
+    <string name="dashboard_go_to_my_reports">Track My Reports</string>
+    <string name="dashboard_go_to_monthly_poll">Monthly Government Poll</string>
+    <string name="dashboard_go_to_profile">My Profile</string>
+    <string name="dashboard_go_to_settings">Settings</string>
+    <string name="dashboard_go_to_logout">Logout</string>
+
+    <!-- Vote Policy -->
+    <string name="vote_policy_title">Vote on Policy</string>
+
+    <!-- Map View -->
+    <string name="map_view_title">District-wise Votes</string>
+
+    <!-- Report Issue -->
+    <string name="report_issue_title">Report an Issue</string>
+
+    <!-- My Reports -->
+    <string name="my_reports_title">My Submitted Reports</string>
+
+    <!-- Monthly Poll -->
+    <string name="monthly_poll_title">Monthly Poll</string>
+
+    <!-- Profile -->
+    <string name="profile_title">User Profile</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+
+    <!-- Logout -->
+    <string name="logout_title">Logout</string>
+    <string name="logout_confirm_button_text">Confirm Logout &amp; Go to Login</string>
+    <string name="login_go_to_register">Don\'t have an account? Register</string>
+
+</resources>
