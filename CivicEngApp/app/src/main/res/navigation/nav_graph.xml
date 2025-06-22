@@ -64,8 +64,8 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.s23010155.fragments.DashboardFragment"
-        android:label="fragment_dashboard"
+        android:name="com.s23010155.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
         tools:layout="@layout/fragment_dashboard">
         <action
             android:id="@+id/action_dashboardFragment_to_votePolicyFragment"
@@ -136,9 +136,10 @@
         tools:layout="@layout/fragment_my_reports">
         <action
             android:id="@+id/action_myReportsFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment"
-            app:popUpTo="@id/dashboardFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_myReportsFragment_to_reportIssueFragment"
+            app:destination="@id/reportIssueFragment" />
     </fragment>
 
     <fragment
@@ -172,9 +173,10 @@
         tools:layout="@layout/fragment_settings">
         <action
             android:id="@+id/action_settingsFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment"
-            app:popUpTo="@id/dashboardFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_self"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
     <fragment

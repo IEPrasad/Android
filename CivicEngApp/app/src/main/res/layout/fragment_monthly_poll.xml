@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:background="@color/vote_policy_background"
+    tools:context=".fragments.MonthlyPollFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/monthly_poll_title"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Monthly Poll"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:paddingTop="32dp"
+        android:text="Monthly Community Poll"
+        android:textColor="@color/vote_policy_yellow_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_back_to_dashboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/polls_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:text="@string/back_to_dashboard"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/monthly_poll_title"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/list_item_poll" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
