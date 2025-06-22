@@ -31,11 +31,11 @@ public class LoginFragment extends Fragment {
                         .navigate(R.id.action_loginFragment_to_dashboardFragment));
 
         // This should navigate to the Register screen
-        binding.textSignUp.setOnClickListener(v ->
+        binding.textViewSignUpLink.setOnClickListener(v ->
                 NavHostFragment.findNavController(LoginFragment.this)
                         .navigate(R.id.action_loginFragment_to_registerFragment));
         
-        // TODO: Implement "Forgot Password" functionality
+        // TODO: Implement "Forgot Password" functionality for textViewForgotPassword
     }
 
     @Override

@@ -25,14 +25,14 @@ public class DashboardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         
-        binding.buttonVotePolicy.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_votePolicyFragment));
-        binding.buttonMapView.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_mapViewFragment));
-        binding.buttonReportIssue.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_reportIssueFragment));
-        binding.buttonMyReports.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_myReportsFragment));
-        binding.buttonMonthlyPoll.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_monthlyPollFragment));
-        binding.buttonProfile.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_profileFragment));
-        binding.buttonSettings.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_settingsFragment));
-        binding.buttonLogout.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_logoutFragment));
+        binding.buttonGoToVotePolicy.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_votePolicyFragment));
+        binding.buttonGoToMapView.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_mapViewFragment));
+        binding.buttonGoToReportIssue.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_reportIssueFragment));
+        binding.buttonGoToMyReports.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_myReportsFragment));
+        binding.buttonGoToMonthlyPoll.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_monthlyPollFragment));
+        binding.buttonGoToProfile.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_profileFragment));
+        binding.buttonGoToSettings.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_settingsFragment));
+        binding.buttonGoToLogout.setOnClickListener(v -> NavHostFragment.findNavController(this).navigate(R.id.action_dashboardFragment_to_logoutFragment));
     }
 
     @Override

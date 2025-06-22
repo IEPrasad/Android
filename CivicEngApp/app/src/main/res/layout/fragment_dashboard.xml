@@ -1,78 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.DashboardFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="@string/dashboard_title"
-            android:textSize="24sp" />
+            android:text="Dashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_vote_policy"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_vote_policy"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dashboard_go_to_vote_policy" />
+            android:text="Vote on Policy"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_report_issue"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_report_issue"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_report_issue" />
+            android:text="Report a Local Issue"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_vote_policy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_my_reports"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_my_reports"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_my_reports" />
+            android:text="Track My Reports"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_report_issue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_monthly_poll"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_monthly_poll"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_monthly_poll" />
+            android:text="Monthly Government Poll"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_my_reports"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_profile"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_profile"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_profile" />
+            android:text="My Profile"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_monthly_poll"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_settings"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_settings"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_settings" />
+            android:text="Settings"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_logout"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_logout"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/dashboard_go_to_logout" />
+            android:text="Logout"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_settings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
         <Button
-            android:id="@+id/button_map_view"
-            android:layout_width="match_parent"
+            android:id="@+id/button_go_to_map_view"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/dashboard_go_to_map_view" />
+            android:text="View District Votes Map"
+            app:layout_constraintTop_toBottomOf="@id/button_go_to_logout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView> 

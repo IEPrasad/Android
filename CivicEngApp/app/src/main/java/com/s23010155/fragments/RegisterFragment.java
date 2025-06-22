@@ -25,13 +25,11 @@ public class RegisterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         
-        // This should navigate to the Login screen
         binding.buttonSignUp.setOnClickListener(v ->
                 NavHostFragment.findNavController(RegisterFragment.this)
-                        .navigate(R.id.action_registerFragment_to_loginFragment));
+                        .navigate(R.id.action_registerFragment_to_dashboardFragment));
         
-        // This should also navigate to the Login screen
-        binding.textSignIn.setOnClickListener(v ->
+        binding.textViewSignInLink.setOnClickListener(v ->
                 NavHostFragment.findNavController(RegisterFragment.this)
                         .navigate(R.id.action_registerFragment_to_loginFragment));
     }

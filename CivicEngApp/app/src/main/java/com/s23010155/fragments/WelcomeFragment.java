@@ -25,11 +25,11 @@ public class WelcomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonLogin.setOnClickListener(v ->
+        binding.buttonGoToLogin.setOnClickListener(v ->
                 NavHostFragment.findNavController(WelcomeFragment.this)
                         .navigate(R.id.action_welcomeFragment_to_loginFragment));
 
-        binding.buttonRegister.setOnClickListener(v ->
+        binding.buttonGoToRegister.setOnClickListener(v ->
                 NavHostFragment.findNavController(WelcomeFragment.this)
                         .navigate(R.id.action_welcomeFragment_to_registerFragment));
     }
