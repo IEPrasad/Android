@@ -45,11 +45,7 @@ public class SettingsFragment extends Fragment {
     }
 
     private void setupUI() {
-        // Dark Mode Switch
-        binding.switchDarkMode.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            AppCompatDelegate.setDefaultNightMode(isChecked ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO);
-        });
-
+        setupDarkModeSwitch();
         // Language Spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(requireContext(),
                 R.array.languages_array, android.R.layout.simple_spinner_item);
@@ -61,12 +57,20 @@ public class SettingsFragment extends Fragment {
 
         // Save Button
         binding.buttonSaveSettings.setOnClickListener(v -> saveSettings());
+    }
 
+    private void setupDarkModeSwitch() {
+        binding.switchDarkMode.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            AppCompatDelegate.setDefaultNightMode(isChecked ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO);
+        });
     }
 
     private void loadSettings() {
-        // Load Dark Mode
+        // Remove listener before setting checked state
+        binding.switchDarkMode.setOnCheckedChangeListener(null);
         binding.switchDarkMode.setChecked(settingsPrefs.getBoolean(KEY_DARK_MODE, false));
+        // Re-add listener
+        setupDarkModeSwitch();
 
         // Load Notifications
         binding.switchNotifications.setChecked(settingsPrefs.getBoolean(KEY_NOTIFICATIONS, true));
