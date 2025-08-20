@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Civic Engagement App</string>
+
+    <!-- General -->
+    <string name="sign_in_link">Already have an account? Sign In</string>
+    <string name="sign_up_link">Don\'t have an account? Sign Up</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="error_password_too_short">Password must be at least 4 characters.</string>
+    <string name="error_passwords_do_not_match">Passwords do not match.</string>
+    <string name="error_invalid_email">Please enter a valid email.</string>
+    <string name="auth_failed">Authentication failed.</string>
+    <string name="auth_register_success">Registration successful.</string>
+    <string name="auth_login_success">Login successful.</string>
+    <string name="auth_invalid_credentials">Invalid email or password.</string>
+    <string name="auth_email_exists">Email is already registered.</string>
+    <string name="error_invalid_nic">Please enter a valid NIC (9 digits + V/X or 12 digits).</string>
+    <string name="error_nic_exists">This NIC is already registered.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up_title">SIGN UP</string>
+    <string name="sign_in_title">SIGN IN</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_welcome">Welcome back!</string>
+    <string name="dashboard_subheading">What do you want to do today?</string>
+    <string name="dashboard_card_vote">Vote on Policies</string>
+    <string name="dashboard_card_map">View Map</string>
+    <string name="dashboard_card_submit">Submit Issue</string>
+    <string name="dashboard_card_reports">My Reports</string>
+    <string name="dashboard_card_poll">Monthly Poll</string>
+    <string name="dashboard_card_profile">Profile</string>
+    <string name="dashboard_card_settings">Settings</string>
+    <string name="dashboard_card_logout">Logout</string>
+
+    <!-- Vote Policy Screen -->
+    <string name="vote_policy_title">Policy Proposal: Public Park Renovation</string>
+    <string name="vote_policy_description">The city council proposes a complete renovation of Central Park, including new playgrounds, walking trails, and a community garden. This project aims to improve public spaces and promote community health. Do you support this initiative?</string>
+    <string name="vote_policy_agree">Agree</string>
+    <string name="vote_policy_disagree">Disagree</string>
+    <string name="vote_policy_submit">Submit Vote</string>
+    <string name="vote_policy_voted_message">Thank you. You have already voted on this policy.</string>
+    <string name="vote_policy_toast_success">Vote submitted successfully!</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Edit Profile</string>
+    <string name="profile_full_name">Full Name</string>
+    <string name="profile_birthday">Birthday</string>
+    <string name="profile_nic">NIC Number</string>
+    <string name="profile_district">District</string>
+    <string name="profile_region">Region</string>
+    <string name="profile_religion">Religion</string>
+    <string name="profile_tag_location">Tag My Location</string>
+    <string name="profile_save_button">Save Profile</string>
+    <string name="profile_saved_toast">Profile saved successfully!</string>
+    <string name="profile_validation_error">Please fill in all required fields.</string>
+    <string name="profile_select_date">Select Date</string>
+
+    <string-array name="districts_array">
+        <item>Ampara</item>
+        <item>Anuradhapura</item>
+        <item>Badulla</item>
+        <item>Batticaloa</item>
+        <item>Colombo</item>
+        <item>Galle</item>
+        <item>Gampaha</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Kegalle</item>
+        <item>Kilinochchi</item>
+        <item>Kurunegala</item>
+        <item>Mannar</item>
+        <item>Matale</item>
+        <item>Matara</item>
+        <item>Monaragala</item>
+        <item>Mullaitivu</item>
+        <item>Nuwara Eliya</item>
+        <item>Polonnaruwa</item>
+        <item>Puttalam</item>
+        <item>Ratnapura</item>
+        <item>Trincomalee</item>
+        <item>Vavuniya</item>
+    </string-array>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_section_security">Security</string>
+    <string name="settings_change_password">Change Password</string>
+    <string name="settings_current_password">Current Password</string>
+    <string name="settings_new_password">New Password</string>
+    <string name="settings_confirm_new_password">Confirm New Password</string>
+    <string name="settings_password_changed_toast">Password changed successfully!</string>
+    <string name="settings_password_mismatch_error">New passwords do not match.</string>
+    <string name="settings_section_notifications">Notifications</string>
+    <string name="settings_enable_notifications">Enable Notifications</string>
+    <string name="settings_section_language">Language</string>
+    <string name="settings_select_language">Select Language</string>
+    <string name="settings_section_data">Data Management</string>
+    <string name="settings_clear_data">Clear App Data</string>
+    <string name="settings_clear_data_confirm_title">Confirm Reset</string>
+    <string name="settings_clear_data_confirm_message">Are you sure you want to clear all app data? This action cannot be undone.</string>
+    <string name="settings_clear_data_toast">App data cleared.</string>
+    <string name="settings_save_button">Save Settings</string>
+    <string name="settings_saved_toast">Settings saved!</string>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Sinhala</item>
+        <item>Tamil</item>
+    </string-array>
+
+    <!-- Report Issue Screen -->
+    <string name="report_issue_title">Report a New Issue</string>
+    <string name="report_issue_category_prompt">Select a Category</string>
+    <string name="report_issue_problem_title">Problem Title</string>
+    <string name="report_issue_problem_description">Describe the issue in detail</string>
+    <string name="report_issue_location_label">Tag Location</string>
+    <string name="google_maps_key" translatable="false">AIzaSyA2KCcfPevGP_A52GOuBek5sliLnTDxgXA</string>
+    <string name="report_issue_attach_photo">Attach Photo</string>
+    <string name="report_issue_submit_button">Submit Issue</string>
+    <string name="report_issue_success_toast">Issue reported successfully!</string>
+    <string name="report_issue_validation_error">Please fill in all required fields.</string>
+    <string name="report_issue_address_not_found">Address not found</string>
+
+    <string-array name="issue_categories_array">
+        <item>Road</item>
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Education</item>
+        <item>Health</item>
+        <item>Agriculture</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="map_search_hint">Search location or district</string>
+    <string name="map_locate_me">Locate Me</string>
+    <string name="filter_agriculture">Agriculture</string>
+    <string name="filter_road">Road</string>
+    <string name="filter_electricity">Electricity</string>
+
+</resources>

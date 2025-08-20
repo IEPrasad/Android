@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dark_navy">#FF0B0C1E</color>
+    <color name="dark_teal">#FF1F4E5A</color>
+    <color name="light_cream">#FFF5F5F5</color>
+    <color name="button_gradient_start">#FF2AF598</color>
+    <color name="button_gradient_end">#FF08AEEA</color>
+    <color name="light_gray_text">#FFB0B0B0</color>
+
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- New Dashboard Theme Colors -->
+    <color name="dashboard_background">#1A1A1A</color>
+    <color name="dashboard_card_background">#2C2C2C</color>
+    <color name="dashboard_yellow">#FFD600</color>
+    <color name="dashboard_text_primary">#FFFFFF</color>
+    <color name="dashboard_text_secondary">#B0B0B0</color>
+
+    <!-- Vote Policy Screen Colors -->
+    <color name="vote_policy_background">#121212</color>
+    <color name="vote_policy_yellow_primary">#FFD700</color>
+    <color name="vote_policy_yellow_secondary">#FFB300</color>
+    <color name="vote_policy_text_unselected">#808080</color>
+
+    <color name="purple_500">#FF6200EE</color>
+
+    <color name="background_chip_color">#424242</color>
+</resources>

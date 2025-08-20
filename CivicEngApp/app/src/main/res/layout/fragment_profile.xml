@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vote_policy_background"
+    android:fillViewport="true"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/profile_title"
+            android:textColor="@color/vote_policy_yellow_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_full_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/profile_full_name"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_title"
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="@color/vote_policy_yellow_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Birthday -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_birthday"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/profile_birthday"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_full_name"
+            app:startIconDrawable="@drawable/ic_calendar"
+            app:startIconTint="@color/vote_policy_yellow_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:focusable="false"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <!-- NIC -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_nic"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/profile_nic"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_birthday">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_nic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- District -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_district"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/profile_district"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_nic">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <!-- Region -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_region"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/profile_region"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_district">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Religion -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_religion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/profile_religion"
+            android:textColorHint="@color/dashboard_text_secondary"
+            app:boxStrokeColor="@color/text_input_color_selector"
+            app:hintTextColor="@color/text_input_color_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_region">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+        
+        <!-- MapView -->
+        <TextView
+            android:id="@+id/map_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/profile_tag_location"
+            android:textColor="@color/vote_policy_yellow_primary"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_location_pin"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_religion" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_location_search_profile"
+            style="@style/Widget.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/map_search_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/map_label">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_location_search_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_location_search_profile" />
+
+        <TextView
+            android:id="@+id/text_selected_address_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dashboard_text_secondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/map_view"
+            tools:text="Selected address will appear here" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/vote_policy_yellow_primary"
+            android:padding="16dp"
+            android:text="@string/profile_save_button"
+            android:textColor="@color/black"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_selected_address_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1.0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

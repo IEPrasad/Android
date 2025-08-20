@@ -1,0 +1,46 @@
+graph TD
+  A["Civic Engagement App"]
+  A --> B["Authentication & Profile"]
+  B --> B1["NIC-based signup/login (SQLite)"]
+  B --> B2["Profile: district/region, tag location (map, Places)"]
+  
+  A --> C["Dashboard"]
+  C --> C1["Cards: Map View, My Reports, Report Issue, Polls, Profile, Settings"]
+  
+  A --> D["Policy Voting"]
+  D --> D1["Agree/Disagree per policy (1 vote/NIC)"]
+  D --> D2["Live totals & percentages"]
+  
+  A --> E["Government Performance (Monthly)"]
+  E --> E1["Good/Bad vote (1/NIC/month)"]
+  E --> E2["Header: month totals & %"]
+  E --> E3["Create custom polls (+)"]
+  
+  A --> F["Issue Reporting"]
+  F --> F1["Category, title, description"]
+  F --> F2["GPS tag: tap/long‑press/drag; reverse geocode"]
+  F --> F3["Photo attach (camera/gallery)"]
+  F --> F4["Persist to DB with status"]
+  
+  A --> G["My Reports"]
+  G --> G1["List of submitted issues"]
+  G --> G2["Filters: district, status, category"]
+  G --> G3["Inline status update (Pending→Responded→Closed)"]
+  
+  A --> H["Map & District Analytics"]
+  H --> H1["District markers: Good/Bad % (monthly)"]
+  H --> H2["Search bar & Locate Me"]
+  
+  A --> I["Settings"]
+  I --> I1["Dark mode (UI theme)"]
+  I --> I2["Language (placeholder)"]
+  I --> I3["Notifications toggle (extensible)"]
+  I --> I4["Clear data"]
+  
+  A --> J["Data & Storage"]
+  J --> J1["SQLite: users (NIC), issues, votes"]
+  J --> J2["Google Maps/Places APIs"]
+  
+  A --> K["Navigation"]
+  K --> K1["NavGraph: Splash → Welcome/Login/Register → Dashboard → Modules"]
+
