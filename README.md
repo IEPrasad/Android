@@ -9,14 +9,14 @@ Focus on practical learning + building apps instead of just reading documentatio
 
 | Area | What to Learn | Why It’s Important |
 |------|---------------|---------------------|
-| **Programming Fundamentals** | Java, Kotlin (official language) | Core building blocks for Android apps |
+| **Programming Fundamentals** | **Java** (OOP, Collections, Exceptions, Threads), **Kotlin** (official language) | Core building blocks for Android apps |
 | **Android Studio & Tools** | Android Studio IDE, Gradle, Emulator, Logcat, Debugger | Main tools for coding, testing, building apps |
 | **UI & Layouts** | XML layouts, Views, RecyclerView, ConstraintLayout, Material Design | Create beautiful and user-friendly interfaces |
 | **Activities & Fragments** | Activity lifecycle, Fragment management | Control how screens and navigation work |
 | **Intents & Navigation** | Explicit/Implicit Intents, Jetpack Navigation Component | Moving between screens and apps |
 | **Data Storage** | SharedPreferences, Room Database, SQLite, DataStore | Save user/app data |
 | **Networking** | REST APIs, Retrofit/Volley/OkHttp, JSON, GraphQL (optional) | Connect your app to the internet |
-| **Background Work** | Services, WorkManager, Coroutines | Handle tasks like downloads, notifications, sync |
+| **Background Work** | Services, WorkManager, Coroutines, Threads | Handle tasks like downloads, notifications, sync |
 | **Permissions & Security** | Runtime permissions, App signing, Secure data storage | Protect user data & publish apps safely |
 | **Firebase & Cloud** | Firebase Authentication, Firestore DB, Push Notifications, Analytics | Real-world backend integration |
 | **Testing** | Unit Testing (JUnit), UI Testing (Espresso) | Ensure apps work correctly |
@@ -28,7 +28,9 @@ Focus on practical learning + building apps instead of just reading documentatio
 
 ## 🚀 Path to Mastery (Step by Step)
 
-1. **Start with Programming** → Learn Java/Kotlin basics.  
+1. **Start with Programming**  
+   - Learn Java basics: Variables, Loops, OOP, Collections, Threads, Exception Handling  
+   - Move to Kotlin (recommended by Google).  
 2. **Setup Tools** → Get comfortable with Android Studio & Gradle.  
 3. **UI Basics** → Build layouts, views, and activities.  
 4. **Mini Projects** → Create apps like calculator, to-do list, notes app.  
@@ -45,7 +47,7 @@ Focus on practical learning + building apps instead of just reading documentatio
 
 - Practice **20 hours of coding per module** (UI, DB, APIs, etc.).  
 - Build **at least 5 complete apps** before applying for jobs.  
-- Use **official Android documentation** only when stuck.  
+- Use **official documentation** only when stuck.  
 - Share projects on **GitHub** and make your portfolio public.  
 - **Publish one app** on Google Play – it proves you are job-ready!  
 
@@ -53,8 +55,18 @@ Focus on practical learning + building apps instead of just reading documentatio
 
 ## 📚 Resources
 
+### 🔹 Java
+- [Java Documentation (Oracle)](https://docs.oracle.com/en/java/javase/21/docs/api/)  
+- [Java Tutorials](https://docs.oracle.com/javase/tutorial/)  
+
+### 🔹 Android
 - [Android Developer Docs](https://developer.android.com)  
+- [Android Studio Guide](https://developer.android.com/studio)  
+
+### 🔹 Kotlin
 - [Kotlin Documentation](https://kotlinlang.org/docs/home.html)  
+
+### 🔹 Firebase
 - [Firebase Docs](https://firebase.google.com/docs)  
 
 ---
